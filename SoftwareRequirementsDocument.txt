@@ -1,0 +1,46 @@
+Blog App - Software Requirements Document
+-----------------------------------------------------------------------
+
+Goals:
+	1. Create a blog to be able to share stories and knowledge with others
+
+User Stories:
+	1. As a viewer, I want to see the list of blog posts so that I can view topics and blogs for me to choose.
+	2. As a viewer, I want to view an individual blog posts so that I can read all of its content.
+	3. As an admin, I want to be able to add a new post by clicking a button and be taken to a create page for a new blog post.
+
+User Flow:
+	
+
+Business Requirements
+	* Pages:
+		- Home Page
+		- Individual Blog Post Page
+		- Create new Post Page
+	* Home Page
+		- Display use profile image
+		- Display list of blogs withTitle, Date, Content
+		- Limit the blog text to a certain height
+	* Individual Blog Post Page
+		- Show the cover image, title, content, added date
+		- Allow the user to go back to the homepage
+	* New Post Page
+		- Allow a user to fill in title, content, and select the cover image
+		- Store the added date
+
+Technical Requirements
+	* Front End using JavaScript
+	* Back End using NodeJS
+		- Rest API
+	* Database
+		- JSON
+	* API Endpoints
+		- Get List of blog posts
+			- "api/posts"
+		- Get individual blog post
+			- "api/posts/:post_id"
+		- Post Blog Post
+			- "api/posts"
+
+
+
