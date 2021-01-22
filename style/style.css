@@ -3,6 +3,35 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.add-post{
+    background-color: #004186;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: all 0.3s ease;
+}
+
+    .add-post a{
+        text-decoration: none;
+    }
+
+    .nav-button.new-post-button{
+        color: white;
+        font-size: 2.5em;
+    }
+
+    .add-post:hover{
+        background-color: #002349;
+    }
+
 .post-link {
     text-decoration: none;
 }
@@ -55,7 +84,7 @@ header{
     }
 
 .main{
-    background-color: yellow;
+    /* background-color: yellow; */
     margin-top: 30px;
     width: 100%;
     display: flex;
@@ -75,6 +104,10 @@ header{
     border-radius: 14px;
     min-height: 200px;
     overflow: hidden;
+    transform: translate3d(0, 0px, 0px);
+    transition-duration: .1s;
+    transition-timing-function: ease-in;
+    margin: 24px;
 }
 
     .post-image{
@@ -110,6 +143,24 @@ header{
             max-height: 65px;
             overflow: hidden;
         }
+
+        .post:hover{
+            transform: translate3d(0, -10px, 10px);
+            /* transition: all .1s ease; */
+            transition-duration: .1s;
+            transition-timing-function: ease-in;
+            box-shadow: 0 2rem 5rem 0 rgba(0,0,0,0.4);
+        }
+
+.navigation a{
+    color: rgba(57, 110, 255, .8);
+    border: 3px solid rgba(57, 110, 255, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14pt;
+}
 
 footer {
     min-height: 100px;
